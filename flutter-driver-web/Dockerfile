@@ -8,7 +8,4 @@ WORKDIR /
 ADD chromedriver .
 RUN sudo chmod +x chromedriver
 
-# upgrade flutter
-RUN cd /home/cirrus/sdks/flutter && git checkout master && git pull && flutter upgrade
-
 RUN flutter config --enable-web && flutter doctor
