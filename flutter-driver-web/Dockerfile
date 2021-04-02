@@ -5,7 +5,7 @@ ADD ./flutter-driver-web/google-chrome-stable_current_amd64.deb /tmp/google-chro
 RUN sudo gdebi -n /tmp/google-chrome-stable_current_amd64.deb
 
 WORKDIR /
-ADD ./chromedriver ./chromedriver
+ADD ./flutter-driver-web/chromedriver ./chromedriver
 RUN sudo chmod +x chromedriver
 
 RUN flutter config --enable-web && flutter doctor
