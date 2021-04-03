@@ -8,4 +8,5 @@ WORKDIR /app
 COPY ./flutter-driver-web/chromedriver /usr/local/bin/chromedriver
 RUN sudo chmod +x /usr/local/bin/chromedriver
 
+RUN flutter config --enable-web
 RUN flutter doctor
