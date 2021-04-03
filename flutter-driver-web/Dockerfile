@@ -1,4 +1,4 @@
-FROM cirrusci/flutter:2.0.3
+FROM cirrusci/flutter:stable
 
 RUN sudo apt update && sudo apt install -y gdebi-core libnss3 libgconf-2-4
 COPY ./flutter-driver-web/google-chrome-stable_current_amd64.deb /tmp/google-chrome-stable_current_amd64.deb
